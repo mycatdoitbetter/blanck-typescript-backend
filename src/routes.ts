@@ -1,7 +1,9 @@
 import { Router } from "express";
-import Auth from "./controllers/Auth";
+// import { ANYVAR } from "./utils/dotenv"; // is functional
+import Controller from "./controllers/Controller";
+
 const routes = Router();
 
-routes.get("/", Auth.teste);
+routes.post("/", Controller.Test);
 
 export default routes;
